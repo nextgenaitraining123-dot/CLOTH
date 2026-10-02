@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Womens Clothing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#FFE3D2; --peach-deep:#FFC4A3; --peach-soft:#FFF3EA;
+  --red:#C21F2D; --red-deep:#8E1420; --ink:#4A0E14;
+  --bg:var(--peach); --card:var(--peach-soft); --text:var(--ink);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#2B0B0F;--card:#3E1218;--text:#FFE3D2;--peach-deep:#7A2A22;--peach-soft:#3E1218;--red:#FF6B5E;--red-deep:#FFB199}
+}
+:root[data-theme="dark"]{--bg:#2B0B0F;--card:#3E1218;--text:#FFE3D2;--peach-deep:#7A2A22;--peach-soft:#3E1218;--red:#FF6B5E;--red-deep:#FFB199}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Jost,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 6vw;flex-wrap:wrap;gap:10px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;font-weight:700;color:var(--red)}
+nav{display:flex;gap:26px}
+nav a{font-weight:500;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--red)}
+
+.hero{text-align:center;padding:30px 6vw 70px}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(3rem,9vw,6.5rem);line-height:1;margin:0;color:var(--red);font-weight:700;letter-spacing:-.01em}
+.hero p{max-width:46ch;margin:18px auto 0;font-size:1.1rem}
+
+.stage{display:flex;justify-content:center;align-items:flex-end;gap:clamp(8px,3vw,48px);margin:46px auto 0;max-width:980px}
+.look{flex:1;max-width:280px;position:relative;padding-top:20px}
+.look::before{content:"";position:absolute;inset:0 8% 28px;border-radius:999px 999px 24px 24px;background:var(--peach-deep);z-index:0}
+.look.mid{transform:translateY(-26px)}
+.look.mid::before{background:var(--red)}
+.look svg{position:relative;z-index:1;width:100%;height:auto;display:block}
+.look.mid svg{color:var(--peach)}
+.look span{display:block;margin-top:8px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.25rem}
+
+.btn{display:inline-block;margin-top:44px;background:var(--red);color:#fff;padding:14px 34px;border-radius:999px;font-weight:500}
+.btn:hover{background:var(--red-deep);color:#fff}
+
+section.shop{padding:70px 6vw;background:var(--card)}
+.shop h2,.band h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,5vw,3rem);text-align:center;margin:0 0 36px;color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;max-width:1000px;margin:0 auto}
+.item{background:var(--bg);border-radius:20px;padding:18px 18px 22px;text-align:center}
+.item svg{width:70%;height:auto;max-height:240px}
+.item h3{margin:6px 0 2px;font-size:1.05rem;font-weight:500}
+.item p{margin:0;color:var(--red);font-weight:500}
+
+.band{background:var(--red);color:var(--peach);text-align:center;padding:60px 6vw}
+.band h2{color:var(--peach);margin-bottom:12px}
+.band p{max-width:50ch;margin:0 auto}
+
+footer{text-align:center;padding:30px 6vw;font-size:.95rem}
+
+@media (max-width:620px){
+  .stage{gap:6px}
+  .look.mid{transform:translateY(-14px)}
+  .look span{font-size:1rem}
+  nav{gap:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="d1" viewBox="0 0 200 360">
+      <path fill="currentColor" d="M72 14h8l10 48h20l10-48h8l-2 56-6 62 48 208q-70 18-140 0l48-208-6-62z"/>
+      <path d="M90 62q10 14 20 0" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3"/>
+      <path d="M80 132h40" stroke="#fff" stroke-opacity=".45" stroke-width="4"/>
+    </symbol>
+    <symbol id="d2" viewBox="0 0 200 360">
+      <path fill="currentColor" d="M58 28l42 66 42-66 12 10-22 86 52 224q-84 22-168 0l52-224-22-86z"/>
+      <rect x="66" y="118" width="68" height="10" rx="5" fill="#fff" fill-opacity=".55"/>
+      <path d="M100 94v250" stroke="#fff" stroke-opacity=".3" stroke-width="2"/>
+    </symbol>
+    <symbol id="d3" viewBox="0 0 200 360">
+      <path fill="currentColor" d="M40 62q60 34 120 0l-16 70 38 210q-82 20-164 0l38-210z"/>
+      <path d="M26 300q74 22 148 0M32 328q68 18 136 0" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3"/>
+      <path d="M62 132h76" stroke="#fff" stroke-opacity=".5" stroke-width="4"/>
+    </symbol>
+    <symbol id="top" viewBox="0 0 200 240">
+      <path fill="currentColor" d="M60 20l40 34 40-34 44 44-26 30-18-12v128q-40 10-80 0V82l-18 12-26-30z"/>
+    </symbol>
+    <symbol id="skirt" viewBox="0 0 200 240">
+      <path fill="currentColor" d="M64 20h72l56 200q-92 22-184 0z"/>
+      <path d="M64 36h72" stroke="#fff" stroke-opacity=".5" stroke-width="5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <a class="logo" href="#top">Womens Clothing</a>
+  <nav aria-label="Main">
+    <a href="#shop">Shop</a>
+    <a href="#offer">Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <h1>Womens Clothing</h1>
+    <p>Dresses, tops and skirts in warm peach and bold red, made to be worn all day.</p>
+
+    <div class="stage">
+      <div class="look"><svg style="color:#C21F2D" role="img" aria-label="Red A-line dress"><use href="#d1"/></svg><span>Rose Slip Dress</span></div>
+      <div class="look mid"><svg viewBox="0 0 200 360" role="img" aria-label="Peach wrap gown"><use href="#d2"/></svg><span>Peach Wrap Gown</span></div>
+      <div class="look"><svg style="color:#8E1420" role="img" aria-label="Deep red ruffle dress"><use href="#d3"/></svg><span>Ruby Ruffle Dress</span></div>
+    </div>
+
+    <a class="btn" href="#shop">Shop the collection</a>
+  </div>
+
+  <section class="shop" id="shop">
+    <h2>New this season</h2>
+    <div class="grid">
+      <div class="item"><svg style="color:#C21F2D" viewBox="0 0 200 360" role="img" aria-label="Red dress"><use href="#d1"/></svg><h3>Cherry Midi Dress</h3><p>₹2,499</p></div>
+      <div class="item"><svg style="color:#F6A07A" viewBox="0 0 200 240" role="img" aria-label="Peach top"><use href="#top"/></svg><h3>Peach Linen Top</h3><p>₹1,199</p></div>
+      <div class="item"><svg style="color:#B3202A" viewBox="0 0 200 240" role="img" aria-label="Red skirt"><use href="#skirt"/></svg><h3>Flared Red Skirt</h3><p>₹1,599</p></div>
+      <div class="item"><svg style="color:#F2906B" viewBox="0 0 200 360" role="img" aria-label="Peach dress"><use href="#d3"/></svg><h3>Apricot Ruffle Dress</h3><p>₹2,899</p></div>
+    </div>
+  </section>
+
+  <section class="band" id="offer">
+    <h2>Festive offer</h2>
+    <p>Get 20% off your first order of two or more pieces. Free delivery across India.</p>
+  </section>
+</main>
+
+<footer id="contact">Womens Clothing · hello@womensclothing.example</footer>
+
+</body>
+</html>
